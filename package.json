@@ -2,9 +2,9 @@
   "name": "NodeTest",
   "version": "0.1.0",
   "description": "NodeTest",
-  "main": "hello-world-server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+    "start": "Node Index"
   },
   "repository": "",
   "keywords": [
@@ -14,5 +14,9 @@
   ],
   "author": "",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "csv-parse": "^4.3.3",
+    "xlsx": "^0.14.1"
+  }
 }
