@@ -10,7 +10,7 @@ var _promise = function (param){
 				}, 3000);
 			}
 	       );
-};
+}; 
 
 _promise(true).then(
 	function(text){
