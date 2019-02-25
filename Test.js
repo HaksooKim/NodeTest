@@ -1,10 +1,22 @@
-var obj = {
-	i : 10,
-	b:() => console.log(this.i, this),
-	c:function(){
-		console.log(this.i, this);
-	}
-}
+var _promise = function (param){
+	return new Promise(
+			function(resolve, reject){
+				setTimeout(function(){
+					if(param){
+						resolve("해결완료");
+					}else{
+						reject(Error("실패!!"));
+					}
+				}, 3000);
+			}
+	       );
+};
 
-obj.b();
-obj.c();
+_promise(true).then(
+	function(text){
+        console.log(text);
+    }, 
+    function(error){
+        console.error(error);
+    }
+);
