@@ -1,5 +1,3 @@
-/*jshint esversion: 6 */ 
-
 const parse = require('csv-parse/lib/sync');
 const fs = require('fs');
 
@@ -23,3 +21,39 @@ records2.forEach((r, i) => {
 for(const [i, r] of records2.entries()){
 	console.log(i, r);
 }
+
+const axios = require('axios'); // ajax library
+const cheerios = require('cheerio'); // html parsing
+
+const crawler = async() => {
+	await Promise.all(records2.map(async(r) => {
+		const response = await axios.get(r.Link);
+		if(response.status === 200){
+			const html = response.data;
+			console.log(html);
+		}
+	}));
+}
+
+crawler();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

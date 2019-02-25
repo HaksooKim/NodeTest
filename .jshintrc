@@ -1,4 +1,6 @@
 ﻿{
+            // Added By Haksoo Kim
+            "esversion" : 6,
 	// --------------------------------------------------------------------
 	// JSHint Nodeclipse Configuration v0.18 
 	// Strict Edition with some relaxations and switch to Node.js, no `use strict`
@@ -123,6 +125,5 @@
 	]
 	//,	"indent" : 2 // Specify indentation spacing
 
-            // Added By Haksoo Kim
-            "esversion" : 6
+            
 }
